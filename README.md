@@ -1,5 +1,5 @@
-# DCUDF
-Implementation of "Robust Zero Level-Set Extraction from Unsigned Distance Fields Based on Double Covering"
+# DCUDF: Robust Zero Level-Set Extraction from Unsigned Distance Fields Based on Double Covering (SIGGRAPH ASIA 2023)
+## [<a href="https://lcs.ios.ac.cn/~houf/pages/dcudf/index.html" target="_blank">Project Page</a>]
 
 We now release main code of our algorithm. 
 You can use our code in dcudf folder to extract mesh from unsigned distance fields.
@@ -39,3 +39,15 @@ You can use our code in dcudf folder to extract mesh from unsigned distance fiel
 # Acknowledgement
 This code base is built upon [CAPUDF](https://github.com/junshengzhou/CAP-UDF). 
 Thanks for their remarkable job !
+
+## Citation
+```
+@article{Hou2023RobustZL,
+  title={Robust Zero Level-Set Extraction from Unsigned Distance Fields Based on Double Covering},
+  author={Fei Hou and Xuhui Chen and Wencheng Wang and Hong Qin and Ying He},
+  journal={ArXiv},
+  year={2023},
+  volume={abs/2310.03431},
+  url={https://api.semanticscholar.org/CorpusID:263671615}
+}
+```
