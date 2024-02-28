@@ -42,12 +42,19 @@ Thanks for their remarkable job !
 
 ## Citation
 ```
-@article{Hou2023RobustZL,
-  title={Robust Zero Level-Set Extraction from Unsigned Distance Fields Based on Double Covering},
-  author={Fei Hou and Xuhui Chen and Wencheng Wang and Hong Qin and Ying He},
-  journal={ArXiv},
-  year={2023},
-  volume={abs/2310.03431},
-  url={https://api.semanticscholar.org/CorpusID:263671615}
+@article{Hou2023DCUDF,
+	author = {Hou, Fei and Chen, Xuhui and Wang, Wencheng and Qin, Hong and He, Ying},
+	title = {Robust Zero Level-Set Extraction from Unsigned Distance Fields Based on Double Covering},
+	year = {2023},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	volume = {42},
+	number = {6},
+	issn = {0730-0301},
+	doi = {10.1145/3618314},
+	journal = {ACM Trans. Graph.},
+	month = {dec},
+	articleno = {245},
+	numpages = {15},
 }
 ```
