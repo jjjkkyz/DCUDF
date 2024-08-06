@@ -1,5 +1,5 @@
 # DCUDF: Robust Zero Level-Set Extraction from Unsigned Distance Fields Based on Double Covering (SIGGRAPH ASIA 2023)
-## [<a href="https://lcs.ios.ac.cn/~houf/pages/dcudf/index.html" target="_blank">Project Page</a>]
+## [<a href="https://lcs.ios.ac.cn/~houf/pages/dcudf/index.html" target="_blank">Project Page</a>]  [<a href="https://arxiv.org/abs/2310.03431" target="_blank">Arxiv</a>]
 
 We now release main code of our algorithm. 
 You can use our code in dcudf folder to extract mesh from unsigned distance fields.
@@ -30,6 +30,20 @@ You can use our code in dcudf folder to extract mesh from unsigned distance fiel
 
     # we have a lot default parameters, see source code for details.
     extractor = dcudf(query_fun, resolution, threshold)
+    
+    # for complex models or nnon-manifold models such as car, sences, etc. Please disable cut postprocess.
+    extractor = dcudf(query_fun, resolution, threshold, is_cut=False)
+    
+    # for low resolution, please decrease laplacian weight.
+    extractor = dcudf(query_fun, 64, threshold, laplacian_weight=500)
+    
+    #Details in shown in code, please read it.
+    
+    # for high quality distance field, you can also decrease laplacian weights.
+    # for high resolution, you can use as low r as possible to extract mesh.
+    # Email us if you have any problem about our hyper-parameters.
+   
+
     mesh = extractor.optimize()
 
 # Demo
