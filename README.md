@@ -34,8 +34,8 @@ You can use our code in dcudf folder to extract mesh from unsigned distance fiel
     # for complex models or nnon-manifold models such as car, sences, etc. Please disable cut postprocess.
     extractor = dcudf(query_fun, resolution, threshold, is_cut=False)
     
-    # for low resolution, please decrease laplacian weight.
-    extractor = dcudf(query_fun, 64, threshold, laplacian_weight=500)
+    # for low resolution, please decrease laplacian weight and increase threshold.
+    extractor = dcudf(query_fun, 64, 256/64 * threshold, laplacian_weight=500)
     
     #Details in shown in code, please read it.
     
